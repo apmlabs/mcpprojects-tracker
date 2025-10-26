@@ -1,0 +1,57 @@
+# CRITICAL: Never commit any project subfolders
+*/
+
+# Sensitive files - never commit
+AmazonQ.md
+secrets.yaml
+*.pem
+*.key
+*.env
+.env*
+
+# AWS credentials
+.aws/
+aws-credentials*
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules (if any local tools)
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Docker
+.dockerignore
+docker-compose.override.yml
