@@ -1,24 +1,49 @@
 # MCP Projects Portfolio
 
-A comprehensive collection of Model Context Protocol (MCP) projects and cloud-native demo applications managed by an AI agent that monitors deployment status and provides infrastructure automation.
+An AI agent-managed collection of Model Context Protocol (MCP) projects and cloud-native demo applications with automated deployment status monitoring and infrastructure management.
 
-## Agent Role
+🤖 **Managed by AI Agent** | 📊 **Real-time Status Tracking** | ☁️ **AWS Cloud Native** | 🔒 **Security First**
 
-This portfolio is managed by an AI agent that:
-- **Reads project subdirectories** to discover available projects
-- **Monitors deployment status** by checking AmazonQ.md/PROGRESS.md files in each project
-- **Compares with AWS reality** to identify infrastructure discrepancies  
-- **Updates main portfolio files** with current status (never modifies project files)
-- **Provides deployment reports** and infrastructure management
+## What This Is
+
+This portfolio demonstrates how an AI agent can effectively manage and monitor multiple cloud infrastructure projects:
+
+- **8 different projects** spanning MCP servers, microservices demos, and infrastructure tools
+- **Automated status monitoring** with real-time deployment tracking
+- **Cost optimization strategies** with proven shutdown/restart procedures  
+- **Security best practices** with secrets management and access controls
+- **Comprehensive documentation** for each deployment pattern
+
+## AI Agent Capabilities
+
+The managing agent can:
+- 🔍 **Discover projects** by scanning subdirectories
+- 📋 **Monitor deployment status** across AWS infrastructure
+- 💰 **Track costs** and recommend optimization strategies
+- 🛡️ **Ensure security** through proper secrets management
+- 📚 **Maintain documentation** with current deployment states
+- 🚀 **Guide deployments** using proven patterns and procedures
+
+## Current Portfolio Status
+
+**Portfolio Health**: 87.5% ready (7/8 projects fully deployable)  
+**Active Infrastructure**: Mixed (varies by cost optimization needs)  
+**Monthly Cost Range**: $0-310 depending on active deployments  
+**Security Status**: All projects follow established security patterns
+
+## Repository Information
+
+**GitHub Repository**: https://github.com/apmlabs/mcpprojects-tracker
+
+This public repository contains the portfolio documentation and AI agent workflow. For security:
+- **No sensitive data** is committed (deployment status, credentials, project code)
+- **Only documentation** is public (overview, patterns, best practices)
+- **Project implementations** remain in local subdirectories
 
 ## Quick Start
 
 - **[AGENT.md](./AGENT.md)** - Agent workflow and technical deployment context
-- **[AmazonQ.md](./AmazonQ.md)** - Current deployment status and portfolio summary
-
-## Portfolio Overview
-
-**8 Total Projects** spanning different technologies and deployment patterns:
+- **[GITHUB.md](./GITHUB.md)** - Repository setup and security information
 
 ### ✅ Ready to Deploy (6 projects)
 1. **Web Search MCP Server** - Node.js tool for Google search integration

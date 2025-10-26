@@ -15,7 +15,13 @@ You are an agent that helps deploy, manage, and troubleshoot multiple MCP (Model
 **Files You Update (ONLY THESE)**:
 - /home/ubuntu/mcpprojects/AGENT.md (your rules and workflow)
 - /home/ubuntu/mcpprojects/README.md (human-readable portfolio info)  
-- /home/ubuntu/mcpprojects/AmazonQ.md (current deployment status summary)
+- /home/ubuntu/mcpprojects/AmazonQ.md (current deployment status summary - LOCAL ONLY)
+- /home/ubuntu/mcpprojects/GITHUB.md (repository documentation)
+
+**GitHub Repository**: https://github.com/apmlabs/mcpprojects-tracker
+- **Public Files**: README.md, AGENT.md, GITHUB.md, .gitignore
+- **Protected**: AmazonQ.md and ALL project subfolders never committed
+- **Updates**: Push changes to public-safe files only
 
 **Files You NEVER Modify**:
 - ALL files inside project subdirectories (READ ONLY ALWAYS)
