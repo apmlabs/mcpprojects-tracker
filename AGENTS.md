@@ -13,13 +13,13 @@ You are an agent that helps deploy, manage, and troubleshoot multiple MCP (Model
 5. **Compare with AWS infrastructure** when requested (optional step)
 
 **Files You Update (ONLY THESE)**:
-- /home/ubuntu/mcpprojects/AGENT.md (your rules and workflow)
+- /home/ubuntu/mcpprojects/AGENTS.md (your rules and workflow)
 - /home/ubuntu/mcpprojects/README.md (human-readable portfolio info)  
 - /home/ubuntu/mcpprojects/AmazonQ.md (current deployment status summary - LOCAL ONLY)
 - /home/ubuntu/mcpprojects/GITHUB.md (repository documentation)
 
 **GitHub Repository**: https://github.com/apmlabs/mcpprojects-tracker
-- **Public Files**: README.md, AGENT.md, GITHUB.md, .gitignore
+- **Public Files**: README.md, AGENTS.md, GITHUB.md, .gitignore
 - **Protected**: AmazonQ.md and ALL project subfolders never committed
 - **Updates**: Push changes to public-safe files only
 
@@ -30,7 +30,7 @@ You are an agent that helps deploy, manage, and troubleshoot multiple MCP (Model
 ## MANDATORY WORKFLOW: ALWAYS START HERE
 
 ### Step 1: ALWAYS Check Subdirectories First
-**CRITICAL FIRST STEP** - Before ANY other action:
+**CRITICAL FIRST STEP** - Before ANY other action (NEVER start with AWS commands):
 1. **Read subdirectories** in /home/ubuntu/mcpprojects/ to discover available projects
 2. **Read status files** in each project subdirectory (READ ONLY):
    - AmazonQ.md or PROGRESS.md - current deployment status
@@ -38,6 +38,8 @@ You are an agent that helps deploy, manage, and troubleshoot multiple MCP (Model
    - AGENTS.md - deployment instructions (if exists)
 3. **NEVER modify** any files inside project subdirectories
 4. **Build understanding** of current project portfolio status
+
+**CRITICAL RULE**: When user asks for "status update" or similar - ALWAYS start with filesystem checks, NEVER with AWS CLI commands. The filesystem contains the current documented state.
 
 ### Step 2: Generate Status Reports
 Based on the files read from subdirectories:
@@ -55,13 +57,13 @@ ONLY if requested or needed:
 ### Step 4: Update Main Portfolio Files
 When status changes are discovered:
 1. **Update ONLY main files** when status changes found:
-   - /home/ubuntu/mcpprojects/AGENT.md (rules and workflow)
+   - /home/ubuntu/mcpprojects/AGENTS.md (rules and workflow)
    - /home/ubuntu/mcpprojects/README.md (human-readable portfolio info)
    - /home/ubuntu/mcpprojects/AmazonQ.md (current deployment status)
 2. **NEVER update** files inside project subdirectories
 
 ### Remember Rule:
-When user says "remember" - add the information to AGENT.md for future reference
+When user says "remember" - add the information to AGENTS.md for future reference
 
 ## Portfolio Overview
 

@@ -42,7 +42,7 @@ This public repository contains the portfolio documentation and AI agent workflo
 
 ## Quick Start
 
-- **[AGENT.md](./AGENT.md)** - Agent workflow and technical deployment context
+- **[AGENTS.md](./AGENTS.md)** - Agent workflow and technical deployment context
 - **[GITHUB.md](./GITHUB.md)** - Repository setup and security information
 
 ### ✅ Ready to Deploy (6 projects)
