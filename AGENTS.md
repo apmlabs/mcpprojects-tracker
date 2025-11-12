@@ -65,6 +65,30 @@ When status changes are discovered:
 ### Remember Rule:
 When user says "remember" - add the information to AGENTS.md for future reference
 
+## CRITICAL LESSONS LEARNED
+
+### File Reading Best Practice
+**ALWAYS read files completely** - Use fs_read without line limits to get full content. Partial reading leads to incomplete understanding and missed information.
+
+### Project Repository Management Rules
+**DISCOVERED**: Each project subfolder has its own GitHub repository with uncommitted changes:
+- astroshop-demo: Modified AGENTS.md, README.md, dynakube files
+- dynatrace-terraform: Multiple modified configuration files and new modules
+- easytrade-demo-k8s: Modified AGENTS.md, README.md, user-data files  
+- online-shop-demo: Modified AGENTS.md, dynakube.yaml
+
+**CRITICAL RULE**: Agent must NEVER commit changes to project subdirectory repositories. These are managed separately and may contain sensitive deployment-specific configurations.
+
+### GitHub Repository Structure
+**Main Portfolio Repository**: https://github.com/apmlabs/mcpprojects-tracker
+- Contains: README.md, AGENTS.md, GITHUB.md, .gitignore
+- Purpose: Public portfolio overview and agent workflow documentation
+
+**Individual Project Repositories**: Each project has its own repository
+- Contains: Project-specific code, configurations, deployment scripts
+- Status: May have uncommitted changes from deployment activities
+- Management: Outside agent scope - DO NOT MODIFY
+
 ## Portfolio Overview
 
 
