@@ -8,7 +8,7 @@ An AI agent-managed collection of Model Context Protocol (MCP) projects and clou
 
 This portfolio demonstrates how an AI agent can effectively manage and monitor multiple cloud infrastructure projects:
 
-- **8 different projects** spanning MCP servers, microservices demos, and infrastructure tools
+- **9 different projects** spanning microservices demos and infrastructure tools
 - **Automated status monitoring** with real-time deployment tracking
 - **Cost optimization strategies** with proven shutdown/restart procedures  
 - **Security best practices** with secrets management and access controls
@@ -26,7 +26,7 @@ The managing agent can:
 
 ## Current Portfolio Status
 
-**Portfolio Health**: 87.5% ready (7/8 projects fully deployable)  
+**Portfolio Health**: 100% ready (8/8 projects fully deployable)  
 **Active Infrastructure**: Mixed (varies by cost optimization needs)  
 **Monthly Cost Range**: $0-310 depending on active deployments  
 **Security Status**: All projects follow established security patterns
@@ -45,19 +45,18 @@ This public repository contains the portfolio documentation and AI agent workflo
 - **[AGENTS.md](./AGENTS.md)** - Agent workflow and technical deployment context
 - **[GITHUB.md](./GITHUB.md)** - Repository setup and security information
 
-### ✅ Ready to Deploy (6 projects)
-1. **Web Search MCP Server** - Node.js tool for Google search integration
-2. **easyTravel Demo** - Java travel booking app (EC2/Docker)
-3. **easyTrade Demo** - 19-microservice trading platform (EC2/Docker)
+### ✅ Ready to Deploy (8 projects)
+1. **easyTravel Demo** - Java travel booking app (EC2/Docker)
+2. **easyTrade Demo** - 19-microservice trading platform (EC2/Docker)
+3. **easyTrade K8s Demo** - 19-microservice trading platform (EC2/K3s)
 4. **OpenTelemetry Astronomy Shop** - 16-service e-commerce demo (EKS/Kubernetes)
 5. **Online Shop Demo** - 11-service shopping platform (EKS/Kubernetes)
 6. **Dynatrace Terraform Tools** - Configuration export utilities
+7. **Dynatrace Terraform Account Management** - IAM and user management tools
+8. **ACE-Box** - Dynatrace deployment platform (has known config issues)
 
-### ⚠️ Known Issues (1 project)
-- **ACE-Box** - Has config corruption bug, needs workarounds
-
-### 🔄 Duplicate (1 project)
-- **Dynatrace Terraform Account Management** - Same as main Terraform tools
+### 🔄 Duplicate (0 projects)
+- All duplicates removed
 
 ## Key Deployment Patterns
 
@@ -65,13 +64,16 @@ This public repository contains the portfolio documentation and AI agent workflo
 - **easyTravel**: t3.medium, 5 ports, travel booking workflows
 - **easyTrade**: t3.large, 19 microservices, stock trading
 
+### EC2 + K3s Pattern
+- **easyTrade K8s**: t3.large, K3s single-node, 19 microservices
+
 ### EKS + Kubernetes Pattern
-- **Astro Shop**: 3×t3a.medium nodes, OpenTelemetry instrumentation
+- **Astro Shop**: 3×m5.large nodes, OpenTelemetry instrumentation
 - **Online Shop**: 3×t3a.medium nodes, Google Cloud microservices demo
 
 ### Local Tools Pattern
-- **Web Search**: MCP server for Claude/VSCode integration
-- **Terraform Tools**: Dynatrace configuration export
+- **Dynatrace Terraform Tools**: Configuration export utilities  
+- **Dynatrace Terraform Account Management**: IAM and user management
 
 ## Critical Insights
 
@@ -138,5 +140,5 @@ For deployment assistance or troubleshooting:
 
 ---
 
-**Portfolio Status**: 87.5% ready (7/8 projects fully deployable)  
+**Portfolio Status**: 100% ready (8/8 projects fully deployable)  
 **Last Updated**: 2025-10-26T10:54:28.676+00:00

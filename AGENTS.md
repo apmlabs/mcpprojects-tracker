@@ -67,63 +67,76 @@ When user says "remember" - add the information to AGENTS.md for future referenc
 
 ## Portfolio Overview
 
-### 1. Web Search MCP Server
-- **Type**: MCP Server Tool
-- **Purpose**: Free web searching using Google search results
-- **Status**: ✅ Ready to deploy
-- **Technology**: Node.js, TypeScript
-- **Deployment**: Local MCP server for Claude/VSCode integration
 
-### 2. ACE-Box Deployment Platform
+
+### 1. ACE-Box Deployment Platform
 - **Type**: Infrastructure Automation
 - **Purpose**: Terraform-based multi-cloud deployment platform by Dynatrace
 - **Status**: ⚠️ Known issues with config corruption bug
 - **Technology**: Terraform, Ansible, Kubernetes
 - **Deployment**: AWS EC2 (c5.2xlarge recommended)
 
-### 3. easyTravel Demo Application
+### 2. easyTravel Demo Application
 - **Type**: Multi-tier Travel Application
 - **Purpose**: Java-based travel booking platform with built-in chaos engineering
 - **Status**: ✅ Production ready
 - **Technology**: Docker Compose, Java, MongoDB, NGINX
 - **Deployment**: AWS EC2 (t3.medium minimum)
 
-### 4. easyTrade Demo Application
+### 3. easyTrade Demo Application
 - **Type**: Microservices Trading Platform
 - **Purpose**: 19-service stock trading application showcasing distributed tracing
 - **Status**: ✅ Production ready
 - **Technology**: Docker Compose, microservices architecture
 - **Deployment**: AWS EC2 (t3.large recommended)
 
-### 5. OpenTelemetry Astronomy Shop
+### 4. OpenTelemetry Astronomy Shop
 - **Type**: Cloud-Native E-Commerce Platform
 - **Purpose**: Official OpenTelemetry demonstration with 16 microservices
 - **Status**: ✅ Production ready
 - **Technology**: Kubernetes, OpenTelemetry, multi-language microservices
 - **Deployment**: AWS EKS (3 x t3a.medium nodes)
 
-### 6. Online Shop Demo
+### 5. Online Shop Demo
 - **Type**: Microservices E-Commerce Platform
 - **Purpose**: Google Cloud microservices demo with 11 services
 - **Status**: ✅ Production ready
 - **Technology**: Kubernetes, microservices architecture
 - **Deployment**: AWS EKS (3 x t3a.medium nodes)
 
-### 7. Dynatrace Terraform Export Tools
+### 6. Dynatrace Terraform Export Tools
 - **Type**: Infrastructure as Code Tools
 - **Purpose**: Export Dynatrace configurations to Terraform format
 - **Status**: ✅ Ready to use
 - **Technology**: Terraform, Dynatrace Provider
 - **Deployment**: Local CLI tools
 
+### 7. Dynatrace Terraform Account Management
+- **Type**: Account Management Tools
+- **Purpose**: Manage Dynatrace IAM users, groups, policies, and permissions
+- **Status**: ✅ Ready to use
+- **Technology**: Terraform, Dynatrace Provider
+- **Deployment**: Local CLI tools
+
+### 8. easyTrade K8s Demo Application
+- **Type**: Microservices Trading Platform (Kubernetes)
+- **Purpose**: 19-service stock trading application on K3s
+- **Status**: ✅ Production ready
+- **Technology**: K3s, microservices architecture
+- **Deployment**: AWS EC2 (t3.large recommended)
+
 ## Deployment Capabilities Matrix
 
 | Project | AWS EC2 | AWS EKS | Docker | Kubernetes | Dynatrace | Auto-scaling |
 |---------|---------|---------|---------|------------|-----------|--------------|
-| Web Search | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | ACE-Box | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | easyTravel | ✅ | ❌ | ✅ | ❌ | ✅ | ✅ |
 | easyTrade | ✅ | ❌ | ✅ | ❌ | ✅ | ✅ |
+| easyTrade K8s | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| Astro Shop | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Online Shop | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DT Terraform | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| DT Account Mgmt | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | Astro Shop | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Online Shop | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | DT Terraform | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
@@ -170,10 +183,10 @@ When user says "remember" - add the information to AGENTS.md for future referenc
 6. Verify pod status and service access
 ```
 
-### 3. Local Tool Pattern (Web Search, Terraform Tools)
+### 3. Local Tool Pattern (Terraform Tools)
 ```bash
 # Standard setup flow
-1. Install dependencies (Node.js, Terraform)
+1. Install dependencies (Terraform)
 2. Configure environment variables
 3. Build/initialize tools
 4. Integrate with target systems
