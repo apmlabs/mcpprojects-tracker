@@ -96,15 +96,73 @@ When user says "remember" - add the information to AGENTS.md for future referenc
 - Commit and push changes to individual project repositories
 - Maintain separate repository management for each project
 - Follow project-specific security and commit guidelines
+- **Synchronize all repositories** when requested for portfolio-wide updates
 
-**Successfully Synchronized Repositories** (2025-11-12):
-- astroshop-demo: Updated deployment configuration and documentation
-- dynatrace-terraform: Added new Terraform modules and management zones
-- easytrade-demo-k8s: Updated K8s deployment scripts and documentation
-- online-shop-demo: Updated Dynatrace configuration and documentation
-- dynatrace-terraform-accmgmt: Clean (no changes needed)
-- easytrade-demo: Clean (no changes needed)
-- easytravel-demo: Clean (no changes needed)
+**Repository Synchronization Workflow**:
+1. **Check Status**: Use `git status --porcelain` to identify uncommitted changes
+2. **Fetch Updates**: Use `git fetch origin` to check for remote changes  
+3. **Pull Changes**: Use `git pull` if local repository is behind remote
+4. **Commit Changes**: Add and commit any pending documentation updates
+5. **Push Updates**: Push committed changes to maintain synchronization
+6. **Verify Status**: Confirm all repositories are up to date
+
+**Successfully Synchronized Repositories** (2025-12-16):
+- astroshop-demo: Up to date
+- dynatrace-terraform: Up to date  
+- dynatrace-terraform-accmgmt: Up to date
+- easytrade-demo-k8s: Updated documentation, pushed changes
+- easytrade-demo: Pulled latest changes from shared repository
+- easytravel-demo: Up to date
+- online-shop-demo: Up to date
+
+**Repository Management Commands**:
+```bash
+# Portfolio-wide status check
+for dir in /home/ubuntu/mcpprojects/*/; do
+  if [ -d "$dir/.git" ]; then
+    cd "$dir" && git status --porcelain && git fetch origin
+  fi
+done
+
+# Synchronize specific project
+cd /home/ubuntu/mcpprojects/PROJECT_NAME
+git add . && git commit -m "Update documentation" && git push
+```
+
+### Repository Management Best Practices
+**DISCOVERED PATTERNS** from recent synchronization:
+
+1. **Shared Repository Pattern**: Some projects share repositories (easytrade-demo and easytrade-demo-k8s both use https://github.com/apmlabs/easytrade-demo.git)
+2. **Automatic Synchronization**: Changes pushed to shared repositories automatically sync to related projects
+3. **Documentation Updates**: AGENTS.md and README.md files frequently need updates after deployment changes
+4. **Commit Message Standards**: Use descriptive messages like "Update documentation and deployment instructions"
+5. **Status Verification**: Always check `git status --porcelain` before and after operations
+
+**Repository Health Monitoring**:
+```bash
+# Quick health check for all repositories
+for dir in /home/ubuntu/mcpprojects/*/; do
+  if [ -d "$dir/.git" ]; then
+    echo "=== $(basename "$dir") ==="
+    cd "$dir"
+    # Check for uncommitted changes
+    if [ -n "$(git status --porcelain)" ]; then
+      echo "Has uncommitted changes"
+    else
+      echo "Clean working directory"
+    fi
+    # Check remote sync status
+    git fetch origin >/dev/null 2>&1
+    LOCAL=$(git rev-parse @)
+    REMOTE=$(git rev-parse @{u} 2>/dev/null || echo "")
+    if [ "$LOCAL" != "$REMOTE" ] && [ -n "$REMOTE" ]; then
+      echo "Behind remote - needs pull"
+    else
+      echo "Up to date with remote"
+    fi
+  fi
+done
+```
 
 ## Portfolio Overview
 

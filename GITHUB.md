@@ -47,6 +47,39 @@ git commit -m "Update portfolio status"
 git push origin main
 ```
 
+### Multi-Repository Management
+
+The portfolio includes **7 individual project repositories**, each with their own GitHub repository:
+
+**Active Project Repositories:**
+- https://github.com/apmlabs/astroshop-demo.git
+- https://github.com/apmlabs/dynatrace-terraform.git  
+- https://github.com/apmlabs/dynatrace-terraform-accmgmt.git
+- https://github.com/apmlabs/easytrade-demo.git (shared by easytrade-demo and easytrade-demo-k8s)
+- https://github.com/apmlabs/easytravel-demo.git
+- https://github.com/apmlabs/online-shop-demo.git
+
+**Repository Synchronization Commands:**
+```bash
+# Check all project repository status
+for dir in /home/ubuntu/mcpprojects/*/; do
+  if [ -d "$dir/.git" ]; then
+    echo "=== $(basename "$dir") ==="
+    cd "$dir"
+    git status --porcelain
+    git fetch origin
+    # Pull if behind remote
+    git pull
+  fi
+done
+
+# Commit and push changes for specific project
+cd /home/ubuntu/mcpprojects/PROJECT_NAME
+git add .
+git commit -m "Update documentation and deployment instructions"
+git push
+```
+
 ## Repository Purpose
 
 This repository serves as:
@@ -65,5 +98,5 @@ This repository serves as:
 ## Last Updated
 - **Repository Created**: 2025-10-26T11:08:38.896+00:00
 - **Initial Commit**: 2025-10-26T11:14:20.134+00:00
-- **Latest Update**: 2025-11-12T02:43:00.000+00:00 - Portfolio cleanup and 100% ready status
-- **Status**: Active and synchronized
+- **Latest Update**: 2025-12-16T13:12:00.000+00:00 - Added multi-repository management and synchronization procedures
+- **Status**: Active and synchronized (7/7 project repositories up to date)
