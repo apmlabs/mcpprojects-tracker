@@ -173,28 +173,36 @@ done
 ### 1. Onyx Project - Youth Activities Search Platform ✅ LIVE
 - **Type**: Professional Aggregator Platform
 - **Purpose**: Comprehensive search platform for youth activities in Catalonia (ages 6-18)
-- **Status**: ✅ FULLY OPERATIONAL - Professional aggregator website LIVE with commercial header and individual school pages
+- **Status**: ✅ FULLY OPERATIONAL - Professional aggregator website LIVE with unique images per school
 - **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
 - **Deployment**: AWS EC2 (t3.large) - CURRENTLY RUNNING
 - **Access**: http://18.216.210.205:3000
+- **GitHub**: https://github.com/apmlabs/onyx-project
 - **Professional Features**:
+  - **Unique Images Per School** - Each school has 3 unique generated images using Picsum with seeds
+  - **Clickable School Cards** - Entire card navigates to detail page for better UX
   - **Professional Commercial Header** - Branded header with "Catalonia's #1 Activity Platform"
   - **Individual School Pages** - Dedicated pages for each school with image galleries (/school/{id})
-  - **Enhanced Navigation** - View Details now navigates to school pages instead of popups
-  - **Thumbnail Images** - Professional image placeholders with ratings overlay on search cards
+  - **Enhanced Hover Effects** - Smooth image zoom, color transitions, shadow effects
+  - **Improved Action Buttons** - Direct phone/website access with text labels
   - **Sidebar Filter Layout** - Professional left sidebar with organized filter panels
   - **Rich UI Components** - Modern design with proper spacing and visual hierarchy
   - **Multiple Filter Selection** - Checkbox-based categories and cities
   - **Dual Range Sliders** - Price (€0-150) and age (6-18) with visual feedback
   - **Grid/List View Toggle** - Switch between card grid and list layouts
   - **Advanced Sorting** - Name, Price Low-High, Price High-Low options
-  - **Professional School Cards** - Image placeholders, ratings, action buttons
-  - **Functional Action Buttons** - View Details navigation, Phone dialer, Website links (WORKING)
   - **Mobile Responsive** - Collapsible sidebar for mobile devices
   - **Active Filter Tracking** - Shows count of active filters with clear all option
   - **18 Authentic Schools** - Real Catalonia locations across Barcelona, Girona, Tarragona
   - **Comprehensive Search** - Text, category, location, price, age filtering
-  - **Test Results**: All features verified working (search, filters, sorting, data display, buttons)
+  - **Test Results**: All features verified working (search, filters, sorting, data display, buttons, unique images)
+- **Recent Improvements (Dec 26, 2025)**:
+  - Fixed duplicate images - each school now has unique generated images
+  - Made entire school cards clickable (not just buttons)
+  - Replaced broken placeholder images with Picsum generated images
+  - Enhanced UX with smooth hover effects and transitions
+  - Improved action buttons with better visual feedback
+  - All changes committed to GitHub repository
 
 ### 2. easyTravel Demo Application
 - **Type**: Multi-tier Travel Application

@@ -53,12 +53,13 @@ This public repository contains the portfolio documentation and AI agent workflo
 - **[GITHUB.md](./GITHUB.md)** - Repository setup and security information
 
 ### ✅ Ready to Deploy (1 active project)
-1. **Onyx Project - Youth Activities Search Platform** - Professional aggregator website with commercial header and individual school pages (EC2/Docker) - **CURRENTLY RUNNING**
+1. **Onyx Project - Youth Activities Search Platform** - Professional aggregator website with unique images per school (EC2/Docker) - **CURRENTLY RUNNING**
    - **Status**: ✅ FULLY OPERATIONAL with professional commercial aggregator UI
-   - **Features**: Commercial header, individual school pages, sidebar filters, rich UI, professional cards, functional buttons
+   - **Features**: Unique generated images per school, clickable cards, commercial header, individual school pages, sidebar filters, rich UI
    - **Data**: 18 authentic Catalonia schools across Barcelona, Girona, Tarragona
    - **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
    - **Access**: http://18.216.210.205:3000
+   - **GitHub**: https://github.com/apmlabs/onyx-project
 
 ### 🛑 Stopped Infrastructure (7 projects)
 2. **easyTravel Demo** - Java travel booking app (EC2/Docker) - STOPPED
