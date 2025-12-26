@@ -173,11 +173,15 @@ done
 ### 1. Onyx Project - Youth Activities Search Platform ✅ LIVE
 - **Type**: Professional Aggregator Platform
 - **Purpose**: Comprehensive search platform for youth activities in Catalonia (ages 6-18)
-- **Status**: ✅ FULLY OPERATIONAL - Professional aggregator website LIVE with functional buttons
+- **Status**: ✅ FULLY OPERATIONAL - Professional aggregator website LIVE with commercial header and individual school pages
 - **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
 - **Deployment**: AWS EC2 (t3.large) - CURRENTLY RUNNING
 - **Access**: http://18.216.210.205:3000
 - **Professional Features**:
+  - **Professional Commercial Header** - Branded header with "Catalonia's #1 Activity Platform"
+  - **Individual School Pages** - Dedicated pages for each school with image galleries (/school/{id})
+  - **Enhanced Navigation** - View Details now navigates to school pages instead of popups
+  - **Thumbnail Images** - Professional image placeholders with ratings overlay on search cards
   - **Sidebar Filter Layout** - Professional left sidebar with organized filter panels
   - **Rich UI Components** - Modern design with proper spacing and visual hierarchy
   - **Multiple Filter Selection** - Checkbox-based categories and cities
@@ -185,7 +189,7 @@ done
   - **Grid/List View Toggle** - Switch between card grid and list layouts
   - **Advanced Sorting** - Name, Price Low-High, Price High-Low options
   - **Professional School Cards** - Image placeholders, ratings, action buttons
-  - **Functional Action Buttons** - View Details popup, Phone dialer, Website links (WORKING)
+  - **Functional Action Buttons** - View Details navigation, Phone dialer, Website links (WORKING)
   - **Mobile Responsive** - Collapsible sidebar for mobile devices
   - **Active Filter Tracking** - Shows count of active filters with clear all option
   - **18 Authentic Schools** - Real Catalonia locations across Barcelona, Girona, Tarragona
