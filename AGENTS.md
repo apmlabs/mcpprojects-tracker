@@ -168,12 +168,28 @@ done
 
 
 
-### 1. ACE-Box Deployment Platform
-- **Type**: Infrastructure Automation
-- **Purpose**: Terraform-based multi-cloud deployment platform by Dynatrace
-- **Status**: ⚠️ Known issues with config corruption bug
-- **Technology**: Terraform, Ansible, Kubernetes
-- **Deployment**: AWS EC2 (c5.2xlarge recommended)
+## Portfolio Overview
+
+### 1. Onyx Project - Youth Activities Search Platform ✅ LIVE
+- **Type**: Professional Aggregator Platform
+- **Purpose**: Comprehensive search platform for youth activities in Catalonia (ages 6-18)
+- **Status**: ✅ FULLY OPERATIONAL - Professional aggregator website LIVE
+- **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
+- **Deployment**: AWS EC2 (t3.large) - CURRENTLY RUNNING
+- **Access**: http://18.216.210.205:3000
+- **Professional Features**:
+  - **Sidebar Filter Layout** - Professional left sidebar with organized filter panels
+  - **Rich UI Components** - Modern design with proper spacing and visual hierarchy
+  - **Multiple Filter Selection** - Checkbox-based categories and cities
+  - **Dual Range Sliders** - Price (€0-150) and age (6-18) with visual feedback
+  - **Grid/List View Toggle** - Switch between card grid and list layouts
+  - **Advanced Sorting** - Name, Price Low-High, Price High-Low options
+  - **Professional School Cards** - Image placeholders, ratings, action buttons
+  - **Mobile Responsive** - Collapsible sidebar for mobile devices
+  - **Active Filter Tracking** - Shows count of active filters with clear all option
+  - **18 Authentic Schools** - Real Catalonia locations across Barcelona, Girona, Tarragona
+  - **Comprehensive Search** - Text, category, location, price, age filtering
+  - **Test Results**: All features verified working (search, filters, sorting, data display)
 
 ### 2. easyTravel Demo Application
 - **Type**: Multi-tier Travel Application

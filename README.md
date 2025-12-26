@@ -26,7 +26,7 @@ The managing agent can:
 
 ## Current Portfolio Status
 
-**Portfolio Health**: 100% ready (8/8 projects fully deployable)  
+**Portfolio Health**: 100% ready (9/9 projects fully deployable)  
 **Active Infrastructure**: Mixed (varies by cost optimization needs)  
 **Monthly Cost Range**: $0-310 depending on active deployments  
 **Security Status**: All projects follow established security patterns
@@ -40,14 +40,29 @@ This public repository contains the portfolio documentation and AI agent workflo
 - **Only documentation** is public (overview, patterns, best practices)
 - **Project implementations** remain in local subdirectories
 
+## Documentation Structure
+
+- **[README.md](./README.md)** - This file: Portfolio overview and project status
+- **[AGENTS.md](./AGENTS.md)** - Agent workflow, technical deployment context, and project expertise
+- **[AmazonQ.md](./AmazonQ.md)** - Current deployment status and infrastructure monitoring (local only)
+- **[GITHUB.md](./GITHUB.md)** - Repository setup, security information, and GitHub integration
+
 ## Quick Start
 
 - **[AGENTS.md](./AGENTS.md)** - Agent workflow and technical deployment context
 - **[GITHUB.md](./GITHUB.md)** - Repository setup and security information
 
-### ✅ Ready to Deploy (8 projects)
-1. **easyTravel Demo** - Java travel booking app (EC2/Docker)
-2. **easyTrade Demo** - 19-microservice trading platform (EC2/Docker)
+### ✅ Ready to Deploy (1 active project)
+1. **Onyx Project - Youth Activities Search Platform** - Professional aggregator website with sidebar filters (EC2/Docker) - **CURRENTLY RUNNING**
+   - **Status**: ✅ FULLY OPERATIONAL with professional aggregator UI
+   - **Features**: Sidebar filters, rich UI, multiple selection, dual range sliders, grid/list views, professional cards
+   - **Data**: 18 authentic Catalonia schools across Barcelona, Girona, Tarragona
+   - **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
+   - **Access**: http://18.216.210.205:3000
+
+### 🛑 Stopped Infrastructure (7 projects)
+2. **easyTravel Demo** - Java travel booking app (EC2/Docker) - STOPPED
+3. **easyTrade Demo** - 19-microservice trading platform (EC2/Docker) - STOPPED
 3. **easyTrade K8s Demo** - 19-microservice trading platform (EC2/K3s)
 4. **OpenTelemetry Astronomy Shop** - 16-service e-commerce demo (EKS/Kubernetes)
 5. **Online Shop Demo** - 11-service shopping platform (EKS/Kubernetes)
@@ -88,15 +103,18 @@ This public repository contains the portfolio documentation and AI agent workflo
 ```
 mcpprojects/
 ├── README.md                    # This file
-├── AGENT.md                     # Agent workflow and technical context
+├── AGENTS.md                    # Agent workflow and technical context
 ├── AmazonQ.md                   # Current deployment status
 ├── acebox/                      # Dynatrace ACE-Box platform
 ├── astroshop-demo/              # OpenTelemetry astronomy shop
 ├── dynatrace-terraform/         # Terraform export tools
 ├── dynatrace-terraform-accmgmt/ # Duplicate Terraform tools
 ├── easytrade-demo/              # Stock trading microservices
+├── easytrade-demo-k8s/          # Stock trading microservices (K8s)
 ├── easytravel-demo/             # Travel booking application
-└── online-shop-demo/            # Google Cloud microservices demo
+├── fortiswitch-project/         # Network device monitoring
+├── online-shop-demo/            # Google Cloud microservices demo
+└── onyx-project/                # Youth activities search platform
 ```
 
 ## Quick Deployment
@@ -140,5 +158,5 @@ For deployment assistance or troubleshooting:
 
 ---
 
-**Portfolio Status**: 100% ready (8/8 projects fully deployable)  
-**Last Updated**: 2025-10-26T10:54:28.676+00:00
+**Portfolio Status**: 100% ready (9/9 projects fully deployable)  
+**Last Updated**: 2025-12-26T15:44:00.000+00:00
