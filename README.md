@@ -26,9 +26,9 @@ The managing agent can:
 
 ## Current Portfolio Status
 
-**Portfolio Health**: 100% ready (11/11 projects fully deployable)  
-**Active Infrastructure**: 1 project running (OnyxPoker)  
-**Monthly Cost Range**: $50 current, up to $290 if all restarted  
+**Portfolio Health**: 100% ready (9/9 projects fully deployable)  
+**Active Infrastructure**: Mixed (varies by cost optimization needs)  
+**Monthly Cost Range**: $0-310 depending on active deployments  
 **Security Status**: All projects follow established security patterns
 
 ## Repository Information
@@ -52,29 +52,27 @@ This public repository contains the portfolio documentation and AI agent workflo
 - **[AGENTS.md](./AGENTS.md)** - Agent workflow and technical deployment context
 - **[GITHUB.md](./GITHUB.md)** - Repository setup and security information
 
-### ✅ Active & Running (1 project)
-1. **OnyxPoker - Poker AI Assistant** - GPT-5.2 vision + strategy engine (EC2/Python) - **CURRENTLY RUNNING**
-   - **Status**: ✅ FULLY OPERATIONAL with 70+ development sessions
-   - **Server**: 54.80.204.92:5001 (us-east-1)
-   - **Features**: V2 vision with opponent tracking, the_lord strategy (+1091 BB vs hero)
-   - **Technology**: Python, GPT-5.2, PyQt5 UI, PokerKit
-   - **Player Database**: 613 players with archetype classification
+### ✅ Ready to Deploy (1 active project)
+1. **Onyx Project - Youth Activities Search Platform** - Professional aggregator website with unique images per school (EC2/Docker) - **CURRENTLY RUNNING**
+   - **Status**: ✅ FULLY OPERATIONAL with professional commercial aggregator UI
+   - **Features**: Unique generated images per school, clickable cards, commercial header, individual school pages, sidebar filters, rich UI
+   - **Data**: 18 authentic Catalonia schools across Barcelona, Girona, Tarragona
+   - **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
+   - **Access**: http://18.216.210.205:3000
+   - **GitHub**: https://github.com/apmlabs/onyx-project
 
-### 🛑 Stopped Infrastructure (4 projects)
-2. **easyTravel Demo (x2)** - Java travel booking app (EC2/Docker) - STOPPED
+### 🛑 Stopped Infrastructure (7 projects)
+2. **easyTravel Demo** - Java travel booking app (EC2/Docker) - STOPPED
 3. **easyTrade Demo** - 19-microservice trading platform (EC2/Docker) - STOPPED
-4. **easyTrade K8s Demo** - 19-microservice trading platform (EC2/K3s) - STOPPED
+3. **easyTrade K8s Demo** - 19-microservice trading platform (EC2/K3s)
+4. **OpenTelemetry Astronomy Shop** - 16-service e-commerce demo (EKS/Kubernetes)
+5. **Online Shop Demo** - 11-service shopping platform (EKS/Kubernetes)
+6. **Dynatrace Terraform Tools** - Configuration export utilities
+7. **Dynatrace Terraform Account Management** - IAM and user management tools
+8. **ACE-Box** - Dynatrace deployment platform (has known config issues)
 
-### 🚫 Terminated (4 projects)
-5. **Onyx Project** - Youth activities search platform - TERMINATED
-6. **OpenTelemetry Astronomy Shop** - 16-service e-commerce demo (EKS) - TERMINATED
-7. **Online Shop Demo** - 11-service shopping platform (EKS) - TERMINATED
-8. **ACE-Box** - Dynatrace deployment platform - TERMINATED
-
-### 🛠️ Local Tools Ready (3 projects)
-9. **Dynatrace Terraform Tools** - Configuration export utilities
-10. **Dynatrace Terraform Account Management** - IAM and user management tools
-11. **FortiSwitch Project** - Network device monitoring (19 alerts deployed)
+### 🔄 Duplicate (0 projects)
+- All duplicates removed
 
 ## Key Deployment Patterns
 
@@ -161,5 +159,5 @@ For deployment assistance or troubleshooting:
 
 ---
 
-**Portfolio Status**: 100% ready (11/11 projects fully deployable)  
-**Last Updated**: 2025-01-25T22:06:00.000+00:00
+**Portfolio Status**: 100% ready (9/9 projects fully deployable)  
+**Last Updated**: 2025-12-26T16:46:00.000+00:00
