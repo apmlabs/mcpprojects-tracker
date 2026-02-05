@@ -166,92 +166,77 @@ done
 
 ## Portfolio Overview
 
-
-
-## Portfolio Overview
-
 ### 1. Onyx Project - Youth Activities Search Platform ✅ LIVE
 - **Type**: Professional Aggregator Platform
-- **Purpose**: Comprehensive search platform for youth activities in Catalonia (ages 6-18)
-- **Status**: ✅ FULLY OPERATIONAL - Professional aggregator website LIVE with unique images per school
-- **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
-- **Deployment**: AWS EC2 (t3.large) - CURRENTLY RUNNING
+- **Status**: ✅ RUNNING - EC2 i-06fd886470e88c537 (t3.large, us-east-2)
 - **Access**: http://18.216.210.205:3000
+- **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
 - **GitHub**: https://github.com/apmlabs/onyx-project
-- **Professional Features**:
-  - **Unique Images Per School** - Each school has 3 unique generated images using Picsum with seeds
-  - **Clickable School Cards** - Entire card navigates to detail page for better UX
-  - **Professional Commercial Header** - Branded header with "Catalonia's #1 Activity Platform"
-  - **Individual School Pages** - Dedicated pages for each school with image galleries (/school/{id})
-  - **Enhanced Hover Effects** - Smooth image zoom, color transitions, shadow effects
-  - **Improved Action Buttons** - Direct phone/website access with text labels
-  - **Sidebar Filter Layout** - Professional left sidebar with organized filter panels
-  - **Rich UI Components** - Modern design with proper spacing and visual hierarchy
-  - **Multiple Filter Selection** - Checkbox-based categories and cities
-  - **Dual Range Sliders** - Price (€0-150) and age (6-18) with visual feedback
-  - **Grid/List View Toggle** - Switch between card grid and list layouts
-  - **Advanced Sorting** - Name, Price Low-High, Price High-Low options
-  - **Mobile Responsive** - Collapsible sidebar for mobile devices
-  - **Active Filter Tracking** - Shows count of active filters with clear all option
-  - **18 Authentic Schools** - Real Catalonia locations across Barcelona, Girona, Tarragona
-  - **Comprehensive Search** - Text, category, location, price, age filtering
-  - **Test Results**: All features verified working (search, filters, sorting, data display, buttons, unique images)
-- **Recent Improvements (Dec 26, 2025)**:
-  - Fixed duplicate images - each school now has unique generated images
-  - Made entire school cards clickable (not just buttons)
-  - Replaced broken placeholder images with Picsum generated images
-  - Enhanced UX with smooth hover effects and transitions
-  - Improved action buttons with better visual feedback
-  - All changes committed to GitHub repository
 
-### 2. easyTravel Demo Application
+### 2. Control Center - Multi-Service Host ✅ LIVE
+- **Type**: Development Services Hub
+- **Status**: ✅ RUNNING - EC2 i-0f10a30cb5094eaa2 (t3a.medium, us-east-1)
+- **IP**: 54.80.204.92
+- **Services**:
+  - **OnyxPoker** (port 5001) - Poker AI with opponent-aware strategy (70+ sessions)
+  - **ReusPartyTracker** (port 5050) - Party/police monitoring with AI vision
+  - **WazeTracker** (port 5051) - Real-time Waze traffic alerts for Reus/Tarragona
+
+### 3. Extension Validation - Dynatrace Extension Validator
+- **Type**: Validation Workflow Tool
+- **Status**: ✅ ACTIVE - 5 extensions validated
+- **Location**: /home/ubuntu/mcpprojects/extension-validation/
+- **Completed**: APIC (8/8), ASR (15/15), ACI (9/9), MSSQL (3/3), Catalyst (25/25)
+- **Alerts Created**: 31 total (APIC 12, ASR 16, ACI 1, MSSQL 2)
+
+### 4. easyTravel Demo Application
 - **Type**: Multi-tier Travel Application
 - **Purpose**: Java-based travel booking platform with built-in chaos engineering
-- **Status**: ✅ Production ready
+- **Status**: 🛑 STOPPED (can restart)
 - **Technology**: Docker Compose, Java, MongoDB, NGINX
-- **Deployment**: AWS EC2 (t3.medium minimum)
+- **Deployment**: AWS EC2 (t3.medium)
 
-### 3. easyTrade Demo Application
+### 5. easyTrade Demo Application
 - **Type**: Microservices Trading Platform
 - **Purpose**: 19-service stock trading application showcasing distributed tracing
-- **Status**: ✅ Production ready
+- **Status**: 🛑 STOPPED (can restart)
 - **Technology**: Docker Compose, microservices architecture
-- **Deployment**: AWS EC2 (t3.large recommended)
+- **Deployment**: AWS EC2 (t3.large)
 
-### 4. OpenTelemetry Astronomy Shop
+### 6. OpenTelemetry Astronomy Shop
 - **Type**: Cloud-Native E-Commerce Platform
 - **Purpose**: Official OpenTelemetry demonstration with 16 microservices
-- **Status**: ✅ Production ready
+- **Status**: 🚫 TERMINATED - Ready for fresh deployment
 - **Technology**: Kubernetes, OpenTelemetry, multi-language microservices
 - **Deployment**: AWS EKS (3 x t3a.medium nodes)
 
-### 5. Online Shop Demo
+### 7. Online Shop Demo
 - **Type**: Microservices E-Commerce Platform
 - **Purpose**: Google Cloud microservices demo with 11 services
-- **Status**: ✅ Production ready
+- **Status**: 🚫 TERMINATED - Ready for fresh deployment
 - **Technology**: Kubernetes, microservices architecture
 - **Deployment**: AWS EKS (3 x t3a.medium nodes)
 
-### 6. Dynatrace Terraform Export Tools
+### 8. Dynatrace Terraform Export Tools
 - **Type**: Infrastructure as Code Tools
 - **Purpose**: Export Dynatrace configurations to Terraform format
 - **Status**: ✅ Ready to use
 - **Technology**: Terraform, Dynatrace Provider
 - **Deployment**: Local CLI tools
 
-### 7. Dynatrace Terraform Account Management
+### 9. Dynatrace Terraform Account Management
 - **Type**: Account Management Tools
 - **Purpose**: Manage Dynatrace IAM users, groups, policies, and permissions
 - **Status**: ✅ Ready to use
 - **Technology**: Terraform, Dynatrace Provider
 - **Deployment**: Local CLI tools
 
-### 8. easyTrade K8s Demo Application
+### 10. easyTrade K8s Demo Application
 - **Type**: Microservices Trading Platform (Kubernetes)
 - **Purpose**: 19-service stock trading application on K3s
-- **Status**: ✅ Production ready
+- **Status**: 🛑 STOPPED (can restart)
 - **Technology**: K3s, microservices architecture
-- **Deployment**: AWS EC2 (t3.large recommended)
+- **Deployment**: AWS EC2 (m5.xlarge)
 
 ## Deployment Capabilities Matrix
 

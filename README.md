@@ -52,24 +52,16 @@ This public repository contains the portfolio documentation and AI agent workflo
 - **[AGENTS.md](./AGENTS.md)** - Agent workflow and technical deployment context
 - **[GITHUB.md](./GITHUB.md)** - Repository setup and security information
 
-### ✅ Ready to Deploy (1 active project)
-1. **Onyx Project - Youth Activities Search Platform** - Professional aggregator website with unique images per school (EC2/Docker) - **CURRENTLY RUNNING**
-   - **Status**: ✅ FULLY OPERATIONAL with professional commercial aggregator UI
-   - **Features**: Unique generated images per school, clickable cards, commercial header, individual school pages, sidebar filters, rich UI
-   - **Data**: 18 authentic Catalonia schools across Barcelona, Girona, Tarragona
-   - **Technology**: FastAPI + React + PostgreSQL + Redis + Docker
-   - **Access**: http://18.216.210.205:3000
-   - **GitHub**: https://github.com/apmlabs/onyx-project
+### ✅ Active Infrastructure (1 running)
+1. **Control Center** - Multi-service host (t3a.medium, us-east-1) - **RUNNING at 54.80.204.92**
+   - OnyxPoker (port 5001), ReusPartyTracker (port 5050), WazeTracker (port 5051)
 
-### 🛑 Stopped Infrastructure (7 projects)
-2. **easyTravel Demo** - Java travel booking app (EC2/Docker) - STOPPED
-3. **easyTrade Demo** - 19-microservice trading platform (EC2/Docker) - STOPPED
-3. **easyTrade K8s Demo** - 19-microservice trading platform (EC2/K3s)
-4. **OpenTelemetry Astronomy Shop** - 16-service e-commerce demo (EKS/Kubernetes)
-5. **Online Shop Demo** - 11-service shopping platform (EKS/Kubernetes)
-6. **Dynatrace Terraform Tools** - Configuration export utilities
-7. **Dynatrace Terraform Account Management** - IAM and user management tools
-8. **ACE-Box** - Dynatrace deployment platform (has known config issues)
+### 🛑 Stopped Infrastructure (5 instances - can restart)
+2. **Onyx Project** - Youth activities search platform (t3.large, us-east-2) - STOPPED
+3. **easyTravel Demo 1** - Java travel booking app (t3.medium, us-east-2) - STOPPED
+4. **easyTravel Demo 2** - Java travel booking app (t3.medium, us-east-2) - STOPPED
+5. **easyTrade Demo** - 19-microservice trading platform (t3.large, us-east-2) - STOPPED
+6. **easyTrade K8s Demo** - 19-microservice trading platform (m5.xlarge, us-east-2) - STOPPED
 
 ### 🔄 Duplicate (0 projects)
 - All duplicates removed
@@ -160,4 +152,4 @@ For deployment assistance or troubleshooting:
 ---
 
 **Portfolio Status**: 100% ready (9/9 projects fully deployable)  
-**Last Updated**: 2025-12-26T16:46:00.000+00:00
+**Last Updated**: 2026-02-05T19:46:00.000+00:00
